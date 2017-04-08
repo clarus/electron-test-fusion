@@ -1,0 +1,23 @@
+{
+  "name": "electron-test-fusion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarus/electron-test-fusion.git"
+  },
+  "author": "Guillaume Claret",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clarus/electron-test-fusion/issues"
+  },
+  "homepage": "https://github.com/clarus/electron-test-fusion",
+  "devDependencies": {
+    "electron": "^1.6.2"
+  }
+}
