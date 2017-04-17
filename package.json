@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "build": "babel src --out-dir dist",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,18 @@
   },
   "homepage": "https://github.com/clarus/electron-test-fusion",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "electron": "^1.6.2"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.0",
+    "redux-ship": "^0.1.4",
+    "redux-ship-devtools": "^0.1.3"
   }
 }

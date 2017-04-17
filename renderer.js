@@ -1,1 +1,1 @@
-console.log('hi');
+require('./dist/front/index');
