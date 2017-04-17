@@ -15,7 +15,7 @@ const store = createStore(Model.reduce, Model.initialState, devToolsEnhancer());
 
 function dispatch(action: Controller.Action): void {
   const control = ShipDevTools.inspect(Controller.control);
-  Ship.run(Effect.run, store, control(action));
+  Ship.run(Effect.run(), store, control(action));
 }
 
 function render() {

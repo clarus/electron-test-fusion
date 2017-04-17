@@ -25,6 +25,8 @@ function* getEye(): Control<void> {
       eye: r2d2.eye_color,
     });
   }
+  yield* Effect.redisSet('foo', 'bar');
+  yield* Effect.redisGet('foo');
 }
 
 function* getMovies(): Control<void> {
