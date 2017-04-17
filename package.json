@@ -23,7 +23,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "electron": "^1.6.2"
+    "electron": "^1.6.2",
+    "flow-bin": "^0.44.2"
   },
   "dependencies": {
     "react": "^15.5.4",
