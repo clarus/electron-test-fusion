@@ -11,7 +11,7 @@ export type Action = {
   type: 'GetPeople',
 };
 
-type Control<A> = Ship.Ship<*, Model.Commit, Model.State, A>;
+type Control<A> = Effect.Control<Model.Commit, Model.State, A>;
 
 function* getEye(): Control<void> {
   const currentEye = yield* Ship.getState(state => state.eye);
@@ -25,8 +25,8 @@ function* getEye(): Control<void> {
       eye: r2d2.eye_color,
     });
   }
-  yield* Effect.redisSet('foo', 'bar');
-  yield* Effect.redisGet('foo');
+  yield* Effect.apiSet(['foo', 'krekr', 'arg'], 'bar');
+  yield* Effect.apiGet();
 }
 
 function* getMovies(): Control<void> {
